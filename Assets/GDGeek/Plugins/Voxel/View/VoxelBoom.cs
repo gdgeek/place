@@ -5,11 +5,16 @@ using GDGeek;
 public class VoxelBoom : MonoBehaviour {
 	public VoxelParticlePool _pool = null;
 	public static Color RandomColor (VoxelMesh mesh){
+		//Debug.Log (mesh);
 
+		//Debug.Log ( mesh.vs);
+		//Debug.Log (mesh.vs.datas);
+		//mesh.filter.get
 
-		VoxelData data = mesh.vs.datas[ Random.Range (0, mesh.vs.datas.Count)];
-		return data.color;
-		//return Color.white;
+		//VoxelData data = mesh.vs.datas[ Random.Range (0, mesh.vs.datas.Count)];
+		//return data.color;
+		//Debug.Log(mesh.filter.mesh.colors[ Random.Range (0, mesh.filter.mesh.colors.Length)]);
+		return mesh.filter.mesh.colors[ Random.Range (0, mesh.filter.mesh.colors.Length)];
 	}
 
 	public static Vector3 RandomPosition (VoxelMesh mesh){

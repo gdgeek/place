@@ -10,6 +10,7 @@ namespace GDGeek{
 		//[SerializeField]
 		public VoxelStruct vs = null;
 		public MeshFilter filter = null;
+
 	}
 
 }
