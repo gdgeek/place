@@ -79,6 +79,7 @@ namespace GDGeek
 			mesh.filter.transform.localPosition = offset;
 
 			if (mesh.collider == null) {
+				Debug.Log ("???!");
 				mesh.collider = mesh.gameObject.GetComponent <BoxCollider>();
 			}
 
